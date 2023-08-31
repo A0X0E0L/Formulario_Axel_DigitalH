@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulario para crear un superhéroe</title>
+    <style>
+      body {
+        background-color: #000000 70% ;
+        color: #000000 70% ;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1>Añade tu superhéroe completando las opciones</h1>
+    <form action="enviar.php" method="post">
+      <fieldset>
+        <legend>Información del superhéroe</legend>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required /><br /><br />
+
+        <label for="especie">Especie:</label>
+        <input type="text" id="especie" name="especie" required /><br /><br />
+
+        <label for="foto">Foto:</label>
+        <input type="file" id="foto" name="foto" /><br /><br />
+
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" name="descripcion" required></textarea
+        ><br /><br />
+
+        <label for="poderes">Poderes:</label><br />
+        <input type="checkbox" id="volar" name="poderes[]" value="Volar" />
+        <label for="volar">Volar</label><br />
+        <input
+          type="checkbox"
+          id="superinteligencia"
+          name="poderes[]"
+          value="SuperInteligencia"
+        />
+        <label for="superinteligencia">SuperInteligencia</label><br />
+        <input
+          type="checkbox"
+          id="vista-rayo-laser"
+          name="poderes[]"
+          value="Vista de rayo láser"
+        />
+        <label for="vista-rayo-laser">Vista de rayo láser</label><br />
+        <input
+          type="checkbox"
+          id="billetera-gorda"
+          name="poderes[]"
+          value="Billetera gorda"
+        />
+        <label for="billetera-gorda">Billetera gorda</label><br /><br />
+
+        <label for="tipo">Tipo de héroe o villano:</label><br />
+        <input type="radio" type="checkbox" id="heroe" name="tipo[]" value="heroe" />
+        <label for="heroe">Héroe/Heroína</label><br />
+        <input type="radio" type="checkbox" id="villano" name="tipo[]" value="villano" />
+        <label for="villano">Villano/Villana</label><br /><br />
+  
+      </fieldset>
+    </form>
+  </body>
+</html>
